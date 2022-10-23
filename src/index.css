@@ -1,6 +1,24 @@
 .container {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    display: grid;
+    background-color: aquamarine;
+    grid-template-columns: minmax(100px, 1fr) minmax(200px, 2fr);
+    grid-template-rows: auto auto;
+}
+
+.foto-cell {
+    
+    background-color: black;
+ 
+}
+
+.myFoto {
+    width: 80% ;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 10%;
+    
 }
