@@ -11,7 +11,7 @@ export default function Title() {
                 <RectProfile />
             </div>
             <div className={styles.about} >
-                <span>Обо мне:</span>
+                <h2>Обо мне:</h2>
                 <RectRight />
                 Высшее инженерное образование и технический склад ума.
                 В программирование пришел из автоматизации инженерных отопительных и вентиляционных систем.

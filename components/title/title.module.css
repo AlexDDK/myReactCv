@@ -12,6 +12,7 @@
     font-family: Roboto;
     text-transform: uppercase;
     font-size: calc(10px + 16 * (100vw/1050));
+    letter-spacing: 0.7vw;
 }
 
 .about {
@@ -26,11 +27,13 @@
     }
     .name h1 {
         font-size: 27px;
+        letter-spacing: 7px;
     }
 }
 
-.about span {
+.about h2 {
     font-size: larger;
     text-transform: uppercase;
     font-weight: bold;
+    margin: 0;
 }

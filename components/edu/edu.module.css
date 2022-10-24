@@ -1,0 +1,56 @@
+.container {
+    padding-top: 15%;
+    background-color: black;
+    color: #ffffff;
+    padding-left: 15%;
+    padding-right: 6%;
+}
+
+.edu {
+    margin: 2vw 0 3vw 0;
+}
+
+.edu span {
+    /* margin: 0.5vw 0; */
+    font-size: calc(3px + 12 * (100vw/1050));
+    font-weight: bold;
+}
+
+.edu p {
+    margin: 0.5vw 0;
+    font-size: calc(3px + 12 * (100vw/1050));
+    /* font-weight: bold; */
+}
+
+.container h2 {
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 8%;
+}
+
+.container h3 {
+    font-size: calc(5px + 12 * (100vw/1050));
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0.5vw 0;
+}
+
+@media (min-width: 1050px) {
+    .edu {
+        margin: 25px 0 35px 0;
+    }
+
+    .edu span {
+        font-size: 15px;
+    }
+
+    .edu h3 {
+        font-size: 16px;
+    }
+
+    .edu h3 {
+        font-size: 18px;
+    }
+}

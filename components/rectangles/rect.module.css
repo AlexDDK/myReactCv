@@ -23,8 +23,11 @@
 }
 
 .rectRight {
-    width: 10%;
-    padding: 0.5%;
+    width: 5vw;
+    max-width: 50px;
+    /* padding: 0.5%; */
+    height: 0.5vw;
+    max-height: 5px;
     background-color: #ffca05;
     margin: 2% 0;
 }
@@ -37,5 +40,9 @@
 
     .rectFoto {
         font-size: 18px;
+    }
+
+    .rectRight {
+        width: 60px;
     }
 }
