@@ -1,20 +1,25 @@
 .rectFoto {
-    width: 80%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     background-color: #ffca05;
     text-align: center;
     font-family: Roboto;
     text-transform: uppercase;
+    font-size: calc(8px + 8 * (100vw/1050));
     
 }
 
 .rectProfile {
-    width: 35%;
-    padding: 0,5%;
+    width: calc(90px + 70 * (100vw/1050));
+    max-width: 160px;
+    padding: 1%;
     background-color: #ffca05;
     font-family: Roboto;
     text-transform: uppercase;
     text-align: center;
+    font-size: calc(6px + 8 * (100vw/1050));
 }
 
 .rectRight {
@@ -24,3 +29,13 @@
     margin: 2% 0;
 }
 
+
+@media (min-width: 1050px) {
+    .rectProfile {
+        font-size: 14px;
+    }
+
+    .rectFoto {
+        font-size: 18px;
+    }
+}

@@ -6,17 +6,27 @@
     justify-content: space-between;
 }
 
-.container h1 {
+.name h1 {
     margin-bottom: 0.5%;
     margin-top: 0;
     font-family: Roboto;
-    text-transform: uppercase;    /* letter-spacing: 5px; */
+    text-transform: uppercase;
+    font-size: calc(10px + 16 * (100vw/1050));
 }
 
 .about {
     font-family: Roboto;
-    font-size: large;
     font-weight: 300;
+    font-size: calc(3px + 15 * (100vw/1050));
+}
+
+@media (min-width: 1050px) {
+    .about {
+        font-size: 18px;
+    }
+    .name h1 {
+        font-size: 27px;
+    }
 }
 
 .about span {
