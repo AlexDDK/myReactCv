@@ -1,5 +1,41 @@
 .container {
-    width: 85%;
     background-color: #ebebeb;
     padding-left: 15%;
+    padding-top: 15%;
+    padding-right: 6%;
+}
+
+
+.container h2 {
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 8%;
+}
+
+/* .container h3 {
+    font-size: calc(5px + 12 * (100vw/1050));
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0.5vw 0;
+} */
+
+.stackContainer {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+
+@media (min-width: 1050px) {
+
+
+
 }

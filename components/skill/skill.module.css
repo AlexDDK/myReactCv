@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.img {
+    width: 17%;
+}
+
+.title {
+    margin-left: 10%;
+    transition: 1s;
+}
+
+.title:hover {
+    transform: scale(1.5);
+    font-weight: 400;
+}
+
+img.img {
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+  }
+  img.img:hover {
+    -webkit-transform: rotate(360deg); 
+    transform: rotate(360deg); 
+  }
