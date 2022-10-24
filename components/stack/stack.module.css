@@ -27,11 +27,11 @@
     flex-direction: column;
 }
 
-.title {
+/* .title {
     display: flex;
     align-items: center;
     padding-left: 10%;
-}
+} */
 
 
 @media (min-width: 1050px) {

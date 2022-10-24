@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17%;
+    height: 100%;
+    background-color: #ffca05;
+}
+
+.title {
+    padding: 3% 0;   
+    margin-left: 8%;
+}
+
+.title p {
+    margin: 1% 0;
+    font-weight: bold;
+}
+
+.img {
+    width: 70%;
+}

@@ -21,7 +21,6 @@ export default function Stack() {
         <Skill img={iconGit} title='Git' />
         <Skill img={iconHtml} title='Html' />
         <Skill img={iconCss} title='Css' />
-        
       </div>
     </div>
     )
