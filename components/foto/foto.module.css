@@ -1,0 +1,14 @@
+.fotoCell {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+ 
+}
+
+.myFoto {
+    width: 80% ;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 10%;
+   
+}

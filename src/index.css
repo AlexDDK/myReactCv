@@ -9,16 +9,3 @@
     grid-template-rows: auto auto;
 }
 
-.foto-cell {
-    
-    background-color: black;
- 
-}
-
-.myFoto {
-    width: 80% ;
-    height: auto;
-    margin-top: 10%;
-    margin-left: 10%;
-    
-}

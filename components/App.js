@@ -1,14 +1,12 @@
 import React from 'react'
-import myFoto from '../src/img/cdvd.jpg'
+import Foto from './foto/Foto'
+import Title from './title/Title'
 
 export default function App() {
   return (
     <div className='container'>
-        {/* <div className='foto-cell'> one </div> */}
-        <div className='foto-cell'>
-          <img src={myFoto} className='myFoto'/>
-        </div>
-        <div> two </div>
+        <Foto />
+        <Title />
         <div> three </div>
         <div> four </div>
     </div>

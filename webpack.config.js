@@ -24,7 +24,7 @@ module.exports = {
         port: 3001,
     },
     resolve: {
-        extensions: ['.json','.js']
+        extensions: ['.json','.js', 'css']
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -42,7 +42,18 @@ module.exports = {
                 use: ["babel-loader"]
             },
             {
-                test: /\.css$/i,
+                test: /\.module\.css$/,
+                use: [MiniCssExtractPlugin.loader, 
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true
+                        }
+                    }
+                ]
+            },
+            {
+                test: /^((?!\.module).)*css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
             },
             {
