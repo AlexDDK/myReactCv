@@ -1,6 +1,7 @@
 .container {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .icon {
@@ -20,6 +21,19 @@
 .title p {
     margin: 1% 0;
     font-weight: bold;
+}
+
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
 .img {

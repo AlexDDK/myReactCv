@@ -1,17 +1,48 @@
 import React from 'react'
 import OneContact from '../oneContact/OneContact'
 import styles from './contacts.module.css'
-import tgIcon from '../../src/img/tg2.svg'
+import tgIcon from '../../src/img/tgIcon.svg'
 import phoneIcon from '../../src/img/phone.svg'
 import emailIcon from '../../src/img/email.svg'
+
 
 
 export default function Contacts() {
   return (
     <div className={styles.container}>
-        <OneContact title='Тел.' desc='8-999-824-32-33'icon={phoneIcon}/>
-        <OneContact title='Email' desc='dhrsmp@ gmail.com' icon={emailIcon}/>
-        <OneContact title='Telegram' desc='@Alexey_Han' icon={tgIcon}/>
+        <OneContact 
+        title='Тел.' 
+        desc={
+          <React.Fragment>
+            <a href="tel:+79998243233">8-999-824-32-33</a>
+          </React.Fragment>
+        } 
+        icon={phoneIcon}
+        link='tel:+79998243233'
+        />
+
+        <OneContact 
+        title='Email' 
+        desc={
+          <React.Fragment>
+            <a href="mailto:aleksei.dudak@gmail.com">my Email</a>
+          </React.Fragment>
+        } 
+        icon={emailIcon}
+        link='mailto:aleksei.dudak@gmail.com'
+        />
+
+        <OneContact 
+        title='Telegram' 
+        desc={
+          <React.Fragment>
+            <a href='https://t.me/Alexey_Han'>@Alexey_Han</a>
+          </React.Fragment>
+        } 
+        icon={tgIcon} 
+        link='https://t.me/Alexey_Han'
+        />
+
         <OneContact />
         <OneContact />
       </div>
