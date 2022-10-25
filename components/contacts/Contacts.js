@@ -41,6 +41,7 @@ export default function Contacts() {
         } 
         icon={tgIcon} 
         link='https://t.me/Alexey_Han'
+        cls='tg'
         />
 
         <OneContact />
