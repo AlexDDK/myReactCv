@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: calc(4px + 11 * (100vw/1050));
+    text-transform: uppercase;
+    font-weight: bold; 
+    margin: 6% 0 3% 0;
+}
+
+.company {
+    margin-top: 1% ;
+    font-size: smaller;
+}
+
+
+@media (min-width: 1050px) {
+    /* .edu {
+        margin: 25px 0 35px 0;
+    }
+
+    .edu span {
+        font-size: 15px;
+    } */
+
+    h3 {
+        font-size: 18px;
+    }
+}

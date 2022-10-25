@@ -1,7 +1,7 @@
 import React from 'react'
 import OneContact from '../oneContact/OneContact'
 import styles from './contacts.module.css'
-import tgIcon from '../../src/img/tgIcon.svg'
+import tgIcon from '../../src/img/tg2.svg'
 import phoneIcon from '../../src/img/phone.svg'
 import emailIcon from '../../src/img/email.svg'
 
@@ -30,6 +30,7 @@ export default function Contacts() {
         } 
         icon={emailIcon}
         link='mailto:aleksei.dudak@gmail.com'
+        cls=''
         />
 
         <OneContact 

@@ -6,6 +6,22 @@
     font-weight: 300;
 }
 
+.downContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    height: 100%;
+}
+
+.rContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ffffff;
+    height: 100%;
+}
+
 @media (min-width: 1050px) {
     .container {
         font-size: 18px;

@@ -1,0 +1,13 @@
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 5% 10%;
+    
+}
+
+.container h2 {
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 3%;
+}

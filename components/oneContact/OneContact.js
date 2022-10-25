@@ -4,12 +4,12 @@ import cn from 'classnames';
 
 
 export default function OneContact({title, desc, icon, link, cls}) {
-  const tg = cls === 'tg' ? styles.tg : ''
+  const tgm = cls ? styles.tgm : styles.img
   return (
     <div className={styles.container}>
       
         <div className={styles.icon}>
-        <a href={link}><img src={icon} className={cn(styles.img, tg)} /></a>
+        <a href={link} className={tgm}><img src={icon} className={styles.img}/></a>
         </div>
         <div className={styles.title}>
             <p>{title}</p>

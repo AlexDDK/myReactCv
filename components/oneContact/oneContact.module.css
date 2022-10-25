@@ -29,17 +29,24 @@ a:-webkit-any-link {
     text-decoration: none;
     display: flex;
     justify-content: center;
+    transition: 0.5s;
 }
 
 a:hover {
     color: blue;
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .img {
-    width: 70%;
+    width: 80%;
+    transition: 0.5s;
 }
 
-.tg {
-    width: 90%
+.img:hover {
+    transform: scale(1.3);
+}
+
+.tgm {
+    width: 100%;    
 }

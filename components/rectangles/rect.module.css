@@ -24,14 +24,21 @@
 
 .rectRight {
     width: 5vw;
-    max-width: 50px;
-    /* padding: 0.5%; */
+    max-width: 60px;
     height: 0.5vw;
     max-height: 5px;
     background-color: #ffca05;
     margin: 2% 0;
 }
 
+.rectDate {
+    width: 84%;
+    max-width: 400px;
+    padding: 1% 0 ;
+    background-color: #ffca05;
+    font-family: Roboto;
+    text-align: center;
+}
 
 @media (min-width: 1050px) {
     .rectProfile {
@@ -42,7 +49,4 @@
         font-size: 18px;
     }
 
-    .rectRight {
-        width: 60px;
-    }
 }

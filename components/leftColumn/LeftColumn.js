@@ -8,8 +8,10 @@ export default function LeftColumn() {
   return (
     <div className={styles.container} >
         <Edu />
-        <Stack />
-        <Contacts />
+        <div className={styles.downContainer}>
+          <Stack />
+          <Contacts />
+        </div>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Foto from './foto/Foto'
 import LeftColumn from './leftColumn/LeftColumn'
+import RightColumn from './leftColumn/RightColumn'
 import Title from './title/Title'
 
 export default function App() {
@@ -9,7 +10,7 @@ export default function App() {
         <Foto />
         <Title />
         <LeftColumn />
-        <div> four </div>
+        <RightColumn />
     </div>
   )
 }
