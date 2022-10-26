@@ -23,7 +23,7 @@
     font-weight: bold;
 }
 
-a:-webkit-any-link {
+a {
     color: black;
     cursor: pointer;
     text-decoration: none;

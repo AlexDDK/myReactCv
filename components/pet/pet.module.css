@@ -1,0 +1,23 @@
+.container {
+    padding: 5% 5% 5% 10%;
+    
+}
+
+.container h2 {
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+.gedza {
+    justify-content: flex-start;
+    font-weight: bold;
+}
+
+.gedza:hover {
+    color: rgb(216, 48, 18);
+    text-decoration: underline;
+    transform: none;
+}

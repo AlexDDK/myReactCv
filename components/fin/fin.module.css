@@ -1,3 +1,7 @@
 .container {
     margin-left: 10%;
 }
+
+.container span {
+    font-weight: bold;
+}

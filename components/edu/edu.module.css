@@ -37,6 +37,18 @@
     margin: 0.5vw 0;
 }
 
+.container h3:hover {
+    color: #ffca05;
+}
+
+.edu p:hover {
+    color: #ffca05;
+}
+
+.univ:hover {
+    color: #ffca05;
+}
+
 @media (min-width: 1050px) {
     .edu {
         margin: 25px 0 35px 0;

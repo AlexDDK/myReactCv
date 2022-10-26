@@ -4,7 +4,6 @@ import RectRight from '../rectangles/RectRight'
 import styles from './workExp.module.css'
 
 export default function WorkExp() {
-  const desc = ''
   return (
     <div className={styles.container}>
       <h2>опыт работы</h2>
@@ -16,7 +15,8 @@ export default function WorkExp() {
           desc={
             <React.Fragment>
               <div></div>
-              <p>У организации была небольшая legacy crm-система, написанная на php. Задачей моей команды было переписать существующую систему на React, улучшить визуал и значительно расширить функционал.</p>
+              <p>Работа над внутренней системой учета</p>
+              <p>У организации был прототип простой crm-системы, написанный на php. Задачей моей команды было значительно расширить функционал, переписать на React, улучшить визуал.</p>
               <p>Например создали и интегрировали в систему:</p>
               <ul>
                 <li>блок по учету стоимости материала, поставленного на объект</li>
@@ -35,8 +35,6 @@ export default function WorkExp() {
         desc='Разработка web-приложений для различных заказчиков (в основном интернет-магазины-лендинги, сайты компаний). HTML, CSS, JS, Hbs, React, React-bootstrap, и т.д.'
         />
         
-
-
       </div>
   )
 }
