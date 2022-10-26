@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
 const production = process.env.NODE_ENV === 'production'
 
@@ -13,7 +14,7 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, './dist'),
     },
-    devtool: 'inline-source-map',
+    devtool: production ? false : 'eval-cheap-module-source-map',
     devServer: {
         static: {
             directory: path.join(__dirname, 'dist'),
@@ -26,12 +27,19 @@ module.exports = {
     resolve: {
         extensions: ['.json','.js', 'css']
     },
+    optimization: {
+        minimizer: [
+            new CssMinimizerPlugin(),
+        ],
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'CV',
             template: path.join(__dirname, 'src', 'index.html')
         }),
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+            filename: production ? '[name].[contenthash].css' : '[name].css'
+        }),
         new CleanWebpackPlugin(),
     ],
     module: {
@@ -43,11 +51,14 @@ module.exports = {
             },
             {
                 test: /\.module\.css$/,
-                use: [MiniCssExtractPlugin.loader, 
+                use: [
+                    production ? MiniCssExtractPlugin.loader : 'style-loader', 
                     {
                         loader: 'css-loader',
                         options: {
-                            modules: true
+                            modules: {
+                                localIdentName: '[local]-[file]'
+                            }
                         }
                     }
                 ]

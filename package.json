@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=development webpack serve --config webpack.config.js",
     "build": "NODE_ENV=production webpack",
-    "wp": "webpack"
+    "wp": "webpack",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/AlexDDK/myReactCv/issues"
   },
-  "homepage": "https://github.com/AlexDDK/myReactCv#readme",
+  "homepage": "https://AlexDDK.github.io/myReactCv",
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/node": "^7.19.1",
@@ -30,6 +31,8 @@
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "style-loader": "^3.3.1",
